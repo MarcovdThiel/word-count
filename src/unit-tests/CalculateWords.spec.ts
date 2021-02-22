@@ -15,7 +15,7 @@ describe('CalculateWords', () => {
 
     it('calculateMostFrequentNWords should return an array of 3 items', () => {
         const calculateWords = new CalculateWords();
-        const wordFrequencies = calculateWords.calculateMostFrequentNWords('The sun shines over the lake', 2);
-        expect(1 === 1).toBe(true);
+        const wordFrequencies = calculateWords.calculateMostFrequentNWords('The sun shines over the lake', 3);
+        expect(wordFrequencies.length === 3).toBe(true);
     });
 });

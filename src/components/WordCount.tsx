@@ -121,14 +121,14 @@ const WordCount: React.FC<WordCOuntProps> = (props) => {
                                 <div className="medium-6 cell">
                                     <input className="input-group-field" value={state.mostFrequentNWordsSentence} onChange={e => onChangeMostFrequentNWordsSentence(e)} type="text" placeholder="sentence" />
                                     <div className="input-group">
-                                        <input className="input-group-field" value={state.mostFrequentNWordsNumber} onChange={e => onChangeMostFrequentNWordsNumber(e)} type="number" />
+                                        <input className="input-group-field" value={state.mostFrequentNWordsNumber} onChange={e => onChangeMostFrequentNWordsNumber(e)} min={0} type="number" />
                                         <div className="input-group-button">
                                             <input type="submit" onClick={e => getMostFrequentNWords(e)} className="button" value="Submit" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="medium-6 cell">
-                                    <label>result: {result.mostFrequentNWords}</label>
+                                    <label>result: {JSON.stringify(result.mostFrequentNWords)}</label>
                                 </div>
                             </div>
                         </div>
