@@ -1,0 +1,24 @@
+// WordCount styling
+// -----------------------
+
+.container {
+    margin-top: 20px;
+
+    &--word-count {
+        input {
+            margin-bottom: 10px;
+        }
+
+        form {
+            border-bottom: 1px solid lightgray;
+        }
+
+        .row {
+            margin-bottom: 25px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+}
